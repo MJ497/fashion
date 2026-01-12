@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Atelier Aura | Haute Couture Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Roboto', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                    colors: {
+                        background: '#ffffff',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-black font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <h3 class="text-xl font-serif font-bold">STYLE ATELIER AURA</h3>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#" class="text-sm uppercase tracking-wider hover:text-gray-500 transition">Collections</a>
+                    <a href="#" class="text-sm uppercase tracking-wider hover:text-gray-500 transition">Atelier</a>
+                    <a href="#" class="text-sm uppercase tracking-wider hover:text-gray-500 transition">Stories</a>
+                    <a href="#" class="text-sm uppercase tracking-wider hover:text-gray-500 transition">Contact</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="#"><i class="fas fa-magnifying-glass w-5 h-5"></i></a>
+                    <a href="#"><i class="fas fa-shopping-bag w-5 h-5"></i></a>
+                    <button class="md:hidden">
+                        <i class="fas fa-bars w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <img src="landing.jpg" alt="Fashion Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-r from-background/90 via-background/50 to-transparent"></div>
+        <div class="relative z-10 text-center px-4">
+            <h1 class="text-5xl md:text-7xl font-serif font-bold text-black mb-6">Where
+                Elegance
+                Meets Craft</h1>
+            <p class="text-xl md:text-2xl text-black mb-8 max-w-2xl mx-auto">Handcrafted garments designed with meticulous attention to detail. Each piece tells a story of timeless sophistication.</p>
+            <a href="#" class="inline-block  bg-black  text-white px-8 py-3 uppercase tracking-wider hover:bg-white hover:text-black transition">Explore Collections</a>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">Featured Collections</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Discover our latest handcrafted pieces designed to empower and inspire</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Collection 1 -->
+                <div class="group relative overflow-hidden">
+                    <img src="collection1.png" alt="Collection 1" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300 flex items-center justify-center">
+                        <a href="#" class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300 text-white border border-white px-6 py-2 uppercase tracking-wider">View Collection</a>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-serif text-xl">Lunar Elegance</h3>
+                        <p class="text-gray-600">Spring/Summer 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Collection 2 -->
+                <div class="group relative overflow-hidden">
+                    <img src="collection3.png" alt="Collection 2" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300 flex items-center justify-center">
+                        <a href="#" class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300 text-white border border-white px-6 py-2 uppercase tracking-wider">View Collection</a>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-serif text-xl">Silhouette Dreams</h3>
+                        <p class="text-gray-600">Fall/Winter 2023</p>
+                    </div>
+                </div>
+                
+                <!-- Collection 3 -->
+                <div class="group relative overflow-hidden">
+                    <img src="collection1.png" alt="Collection 3" class="w-full h-full object-cover transition duration-500 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition duration-300 flex items-center justify-center">
+                        <a href="#" class="opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition duration-300 text-white border border-white px-6 py-2 uppercase tracking-wider">View Collection</a>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="font-serif text-xl">Nocturnal Threads</h3>
+                        <p class="text-gray-600">Limited Edition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="logo.jpeg" alt="Atelier" class="w-full h-auto shadow-lg">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">The Atelier</h2>
+                    <p class="text-gray-600 mb-6">Founded in 2024, Style Atelier Aura is the vision of designer Elizabeth Ushama Ali, who brings a fresh perspective to couture fashion with meticulous attention to detail and sustainable practices.</p>
+                    <p class="text-gray-600 mb-8">Each piece is handcrafted in our Parisian-inspired atelier, where traditional techniques meet contemporary design. We celebrate the art of slow fashion, creating garments meant to last and be treasured.</p>
+                    <a href="#" class="inline-block border-2 border-black text-black px-8 py-3 uppercase tracking-wider hover:bg-black hover:text-white transition">Our Story</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-serif font-bold mb-4">In Their Words</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">What our clients say about our creations</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-8 border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="mb-6">"The craftsmanship is unparalleled. I've never worn anything that fits so perfectly and makes me feel so confident."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 mr-4"></div>
+                        <div>
+                            <h4 class="font-medium">Anna Ushie</h4>
+                            <p class="text-sm text-gray-400">Calabar , Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-8 border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="mb-6">"Every detail is considered. The fabrics, the stitching, the fit - it's clear these pieces are made with love and expertise."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 mr-4"></div>
+                        <div>
+                            <h4 class="font-medium">Fatima Odu</h4>
+                            <p class="text-sm text-gray-400">Fct, Abuja, Nigeria</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="p-8 border border-gray-800">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400 mr-1"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="mb-6">"I've found my go-to designer. The pieces are timeless yet modern, and the quality is exceptional."</p>
+                    <div class="flex items-center">
+                        <div class="w-10 h-10 rounded-full bg-gray-700 mr-4"></div>
+                        <div>
+                            <h4 class="font-medium">Mr. Ali</h4>
+                            <p class="text-sm text-gray-400">Fct Abuja</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-20 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-serif font-bold mb-6">Join Our World</h2>
+            <p class="text-gray-600 mb-8">Subscribe to receive updates on new collections, exclusive events, and the art of couture.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 border border-gray-300 focus:outline-none focus:border-black">
+                <button type="submit" class="bg-black text-white px-6 py-3 uppercase tracking-wider hover:bg-gray-800 transition">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">STYLE ATELIER AURA</h3>
+                    <p class="text-gray-400">Crafting elegance through meticulous design and sustainable practices.</p>
+                </div>
+                <div>
+                    <h4 class="uppercase text-sm tracking-wider mb-4">Shop</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">New Arrivals</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Bestsellers</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Collections</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Accessories</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="uppercase text-sm tracking-wider mb-4">About</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Our Story</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Sustainability</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">The Atelier</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="uppercase text-sm tracking-wider mb-4">Connect</h4>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#"><i class="fab fa-instagram text-gray-400 hover:text-white transition"></i></a>
+                        <a href="#"><i class="fab fa-facebook text-gray-400 hover:text-white transition"></i></a>
+                        <a href="#"><i class="fab fa-twitter text-gray-400 hover:text-white transition"></i></a>
+                        <a href="#"><i class="fab fa-pinterest text-gray-400 hover:text-white transition"></i></a>
+                    </div>
+                    <p class="text-gray-400">info@styleatelieraura</p>
+                    <p class="text-gray-400">+234 8053 8571 40</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2026 Style Atelier Aura. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition text-sm">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
